@@ -298,7 +298,7 @@
             <?php
               if(getenv("stress"))
               {
-                echo "starting cpu stress, ".intval(getenv("stress")." cycles";
+                echo "starting cpu stress, ".intval(getenv("stress"))." cycles";
                 $a = 1;
                 for($i = 0; $i < intval(getenv("stress")); $i++) 
                 {
