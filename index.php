@@ -299,7 +299,7 @@
   </body>
 </html>
 <?php
-  if(isset($_ENV["stress"]) and $_ENV["stress"])
+  if($_ENV["stress"] != "")
   {
     $a = 1;
     for($i = 0; $i < 1000000000; $i++) 
