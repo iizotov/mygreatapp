@@ -240,14 +240,23 @@
         left: 762px;
         z-index: 4;
       }
-	#showslow {
-    opacity: 1;
-    transition: opacity 5s ease-in-out;
-    -webkit-transition: opacity 5s ease-in-out;
-    -moz-transition: opacity 5s ease-in-out;
-    -ms-transition: opacity 5s ease-in-out;
-    -o-transition: opacity 5s ease-in-out;
-}
+	.ele {
+	 
+	  animation: 10s fadeIn;
+	  animation-fill-mode: forwards;
+
+	  visibility: hidden;
+	}
+
+	@keyframes fadeIn {
+	  0% {
+	    opacity: 0;
+	  }
+	  100% {
+	    visibility: visible;
+	    opacity: 1;
+	  }
+	}
     </style>
   </head>
   <body>
@@ -286,7 +295,7 @@
     </div>
 	    <div class="container"> 
 		    <h1>The answer to life the universe and everything</h1>
-		    <h2 id="showslow">
+		    <h1 class="ele">
 			    <?php echo(42 + rand(0, 1000) / 1000); ?>
 			</h2>
 	    </div>
