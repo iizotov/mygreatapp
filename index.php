@@ -294,12 +294,13 @@
           <h1 class="ele">
             <?php echo(42 + rand(0, 1000) / 1000); ?>
           </h1>
+          <i><?php echo getenv("stress"); ?> </i>
 	    </div>
     <script type="text/javascript" src="/_error.js"></script>
   </body>
 </html>
 <?php
-  if($_ENV["stress"] != "")
+  if(getenv("stress"))
   {
     $a = 1;
     for($i = 0; $i < 1000000000; $i++) 
