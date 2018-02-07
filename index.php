@@ -302,7 +302,7 @@
   if(getenv("stress"))
   {
     $a = 1;
-    for($i = 0; $i < 1000000000; $i++) 
+    for($i = 0; $i < int(getenv("stress")); $i++) 
     {
       $a *= $i;
     }
