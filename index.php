@@ -294,21 +294,22 @@
           <h1 class="ele">
             <?php echo(42 + rand(0, 1000) / 1000); ?>
           </h1>
-          <i>
-            <?php echo intval(getenv("stress")); ?>
-          </i>
+          <div>
+            <?php
+              if(getenv("stress"))
+              {
+                echo "starting cpu stress, ".intval(getenv("stress")." cycles";
+                $a = 1;
+                for($i = 0; $i < intval(getenv("stress")); $i++) 
+                {
+                  $a *= $i;
+                }
+                echo "<br>cpu stress complete...";
+              }
+            ?>
+          </div>
 	    </div>
     <script type="text/javascript" src="/_error.js"></script>
   </body>
 </html>
-<?php
-  if(getenv("stress"))
-  {
-    $a = 1;
-    for($i = 0; $i < intval(getenv("stress")); $i++) 
-    {
-      $a *= $i;
-    }
-    echo "cpu stress complete...";
-  }
-?>
+
