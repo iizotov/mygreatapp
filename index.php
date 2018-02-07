@@ -294,7 +294,6 @@
           <h1 class="ele">
             <?php echo(42 + rand(0, 1000) / 1000); ?>
           </h1>
-          <i><?php echo getenv("stress"); ?> </i>
 	    </div>
     <script type="text/javascript" src="/_error.js"></script>
   </body>
@@ -306,7 +305,7 @@
     for($i = 0; $i < 1000000000; $i++) 
     {
       $a *= $i;
-      echo "stressing cpu...";
     }
+    echo "cpu stress complete...";
   }
 ?>
