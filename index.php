@@ -294,6 +294,7 @@
           <h1 class="ele">
             <?php echo(42 + rand(0, 1000) / 1000); ?>
           </h1>
+          <i>echo int(getenv("stress"))</i>
 	    </div>
     <script type="text/javascript" src="/_error.js"></script>
   </body>
