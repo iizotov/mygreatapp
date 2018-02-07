@@ -240,6 +240,14 @@
         left: 762px;
         z-index: 4;
       }
+	#showslow {
+    opacity: 1;
+    transition: opacity 5s ease-in-out;
+    -webkit-transition: opacity 5s ease-in-out;
+    -moz-transition: opacity 5s ease-in-out;
+    -ms-transition: opacity 5s ease-in-out;
+    -o-transition: opacity 5s ease-in-out;
+}
     </style>
   </head>
   <body>
@@ -277,7 +285,10 @@
 
     </div>
 	    <div class="container"> 
-	    <h1>The answer to life the universe and everything: <?php echo(42 + rand(0, 1000) / 1000); ?></h1>
+		    <h1>The answer to life the universe and everything</h1>
+		    <h2 id="showslow">
+			    <?php echo(42 + rand(0, 1000) / 1000); ?>
+			</h2>
 	    </div>
 	    
     <script type="text/javascript" src="/_error.js"></script>
