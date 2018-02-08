@@ -303,7 +303,7 @@
               <?php
                 if(getenv("stress")) 
                 {
-                  echo "To get the answer, I used ".intval(getenv("stress"))." cpu cycles!";
+                  echo "To get the answer, I used ".intval(getenv("stress"))." cpu cycles!"; 
                   $a = 1;
                   for($i = 0; $i < intval(getenv("stress")); $i++) 
                   {
