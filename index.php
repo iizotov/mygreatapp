@@ -294,23 +294,23 @@
           <h1 class="ele">
             <?php echo(42 + rand(0, 1000) / 1000); ?>
           </h1>
-          <div>
-            <?php
-              if(getenv("stress"))
-              {
-                echo "to get the answer, I used ".intval(getenv("stress"))." cpu cycles";
-                $a = 1;
-                for($i = 0; $i < intval(getenv("stress")); $i++) 
-                {
-                  $a *= $i;
-                }
-              }
-            ?>
-          </div>
-          <div>
+          <div class="ele">
             <h2>You were proudly served by</h2>
             <p>Instance Id: <?php echo(getenv('WEBSITE_INSTANCE_ID')); ?></p>
             <p>Region: <?php echo(getenv('REGION_NAME')); ?></p>
+            <p>
+              <?php
+                if(getenv("stress"))
+                {
+                  echo "To get the answer, I used ".intval(getenv("stress"))." cpu cycles";
+                  $a = 1;
+                  for($i = 0; $i < intval(getenv("stress")); $i++) 
+                  {
+                    $a *= $i;
+                  }
+                }
+              ?>
+            </p>
           </div>
 	    </div>
     <script type="text/javascript" src="/_error.js"></script>
