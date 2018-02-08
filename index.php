@@ -291,15 +291,15 @@
     </div>
 	    <div class="container"> 
 		    <h1>The answer to life the universe and everything is... 
-          <span class="ele">
+          <p class="ele">
             <?php echo(42 + rand(0, 1000) / 1000); ?>
-          </span>
+          </p>
         </h1>
           <div>
             <b>You were proudly served by</b>
             <p>Instance Id: <?php echo(getenv('WEBSITE_INSTANCE_ID')); ?></p>
             <p>Region: <?php echo(getenv('REGION_NAME')); ?></p>
-            <p>
+            <p>BuildId: <?php echo(getenv('buildId')); ?></p>
               <?php
                 if(getenv("stress"))
                 {
