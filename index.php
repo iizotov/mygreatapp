@@ -307,6 +307,11 @@
               }
             ?>
           </div>
+          <div>
+            <h2>You were proudly served by</h2>
+            <p>Instance Id: <?php echo(getenv('WEBSITE_INSTANCE_ID')); ?></p>
+            <p>Region: <?php echo(getenv('REGION_NAME')); ?></p>
+          </div>
 	    </div>
     <script type="text/javascript" src="/_error.js"></script>
   </body>
