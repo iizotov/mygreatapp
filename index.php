@@ -290,10 +290,11 @@
 
     </div>
 	    <div class="container"> 
-		    <h1>The answer to life the universe and everything</h1>
-          <h1 class="ele">
+		    <h1>The answer to life the universe and everything is... 
+          <div class="ele">
             <?php echo(42 + rand(0, 1000) / 1000); ?>
-          </h1>
+          </div>
+        </h1>
           <div>
             <b>You were proudly served by</b>
             <p>Instance Id: <?php echo(getenv('WEBSITE_INSTANCE_ID')); ?></p>
