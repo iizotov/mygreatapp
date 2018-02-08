@@ -294,8 +294,8 @@
           <h1 class="ele">
             <?php echo(42 + rand(0, 1000) / 1000); ?>
           </h1>
-          <div class="ele">
-            <h2>You were proudly served by</h2>
+          <div>
+            <b>You were proudly served by</b>
             <p>Instance Id: <?php echo(getenv('WEBSITE_INSTANCE_ID')); ?></p>
             <p>Region: <?php echo(getenv('REGION_NAME')); ?></p>
             <p>
