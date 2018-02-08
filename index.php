@@ -291,9 +291,9 @@
     </div>
 	    <div class="container"> 
 		    <h1>The answer to life the universe and everything is... 
-          <div class="ele">
+          <span class="ele">
             <?php echo(42 + rand(0, 1000) / 1000); ?>
-          </div>
+          </span>
         </h1>
           <div>
             <b>You were proudly served by</b>
