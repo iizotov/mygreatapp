@@ -301,7 +301,7 @@
             <p>Region: <?php echo(getenv('REGION_NAME')); ?></p>
             <p>BuildId: <?php echo(getenv('buildId')); ?></p>
               <?php
-                if(getenv("stress"))
+                if(getenv("stress")) 
                 {
                   echo "To get the answer, I used ".intval(getenv("stress"))." cpu cycles!";
                   $a = 1;
