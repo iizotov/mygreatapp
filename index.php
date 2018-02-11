@@ -290,7 +290,7 @@
 
     </div>
 	    <div class="container"> 
-		    <h1>The answer to life the universe and everything is... 
+		    <h1>The answer to life the universe and everything is: 
           <p class="ele">
             <?php echo(42 + rand(0, 1000) / 1000); ?>
           </p>
